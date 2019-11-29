@@ -22,16 +22,20 @@
          
         
       <script>
-		  
-      var myDiv = document.getElementsByClassName('sponsorElement');
+		    var myDiv = document.getElementsByClassName('divSquare');
 			var count = myDiv.length;
+		    var x = 0;
 			for (var i = 0; i < count; i += 1) {
-			myDiv[i].onclick = function() {
-			alert(this.textContent);
+			myDiv[i].onmouseover = function() {
+			x += 100;
+				
+			
+				 console.log(x);
+				
+				 
 			};
-			}  
-		  
-		  
+			} 
+		   
 		
 	</script>
        
