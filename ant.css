@@ -1,0 +1,35 @@
+.square{
+	
+display: flex;
+	
+justify-content: space-around;	
+	
+	
+	
+	
+	
+}
+
+.divSquare{
+	
+	width: 100px;
+	height: 100px;
+	background:black;
+	margin: 5px;
+	
+   
+  transition: 3s ease-in-out;
+
+     transform: translate(0,700px);
+
+}
+.divSquare:hover{
+	
+	
+     transform: translate(0,-700px);
+	
+     
+   transition: 1s bottom, 4s 1s left cubic-bezier(0,1,1,1);
+
+	
+}
