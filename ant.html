@@ -21,16 +21,25 @@
       </div>   
         
       <script>
+<<<<<<< HEAD
 		  
       var myDiv = document.getElementsByClassName('divSquare');
+=======
+		    var myDiv = document.getElementsByClassName('divSquare');
+>>>>>>> 9c5230ff16180f4b40979a36003b8ed7c8a6de37
 			var count = myDiv.length;
+		    var x = 0;
 			for (var i = 0; i < count; i += 1) {
-			myDiv[i].onclick = function() {
-			alert(this.textContent);
+			myDiv[i].onmouseover = function() {
+			x += 100;
+				
+			
+				 console.log(x);
+				
+				 
 			};
-			}  
-		  
-		  
+			} 
+		   
 		
 	</script>
        
