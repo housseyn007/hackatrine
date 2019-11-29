@@ -17,15 +17,16 @@ justify-content: space-around;
 	background:black;
 	margin: 5px;
 	
+	
    
-  transition: 5s ease-in-out;
+  transition: 10s ease-in-out;
 
      transform: translate(0,700px);
 
 }
+
 .divSquare:hover{
 	
-	background: blue;
      transform: translate(0,-700px);
 	
 	
