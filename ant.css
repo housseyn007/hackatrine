@@ -10,19 +10,22 @@ justify-content: space-around;
 	background:black;
 	margin: 5px;
 	
+	
    
-  transition: 3s ease-in-out;
+  transition: 10s ease-in-out;
 
      transform: translate(0,700px);
 
 }
+
 .divSquare:hover{
-	
 	
      transform: translate(0,-700px);
 	
+	
      
-   transition: 1s bottom, 4s 1s left cubic-bezier(0,1,1,1);
+  transition: 1s bottom, 3s 1s right cubic-bezier(1,1,1,1);
 
+	
 	
 }

@@ -1,33 +1,43 @@
 <html>
-
-<head>
-	<title>TODO supply a title</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="ant.css" rel="stylesheet">
-</head>
-
-<body>
-
-	<div class="square">
-
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="ant.css" rel="stylesheet" >
+    </head>
+    <body>
+        
+		<div id="score">0</div>
+         <div class="square">
+		
 		<div class="divSquare">hello</div>
-		<div class="divSquare">hello</div>
-		<div class="divSquare"></div>
-		<div class="divSquare"></div>
-	</div>
-
-	<script>
-
-		var myDiv = document.getElementsByClassName('sponsorElement');
-		var count = myDiv.length;
-		for (var i = 0; i < count; i += 1) {
-			myDiv[i].onclick = function () {
-				alert(this.textContent);
+	    <div class="divSquare">hello</div>
+	    <div class="divSquare"></div>
+	   <div class="divSquare"></div>
+		
+		
+		
+		
+		
+		</div>
+         
+        
+      <script>
+		    var myDiv = document.getElementsByClassName('divSquare');
+			var count = myDiv.length;
+		    var x = 0;
+			for (var i = 0; i < count; i += 1) {
+			myDiv[i].onmouseover = function() {
+			x += 100;
+				
+			
+				 console.log(x);
+				document.getElementById('score').innerHTML = x;
+				
+				
 			};
-		}
+			}
 	</script>
-
 </body>
 
 </html>
