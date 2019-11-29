@@ -1,3 +1,16 @@
+body{
+  background: url('fond2.jpg');
+  background-size: cover;
+
+}
+
+.filter {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  height: 100%;
+}
+
+
 .square{
 	
 display: flex;
@@ -14,7 +27,6 @@ justify-content: space-around;
 	
 	width: 100px;
 	height: 100px;
-	background:black;
 	margin: 5px;
 	
    
@@ -29,7 +41,24 @@ justify-content: space-around;
      transform: translate(0,-700px);
 	
      
-   transition: 1s bottom, 4s 1s left cubic-bezier(0,1,1,1);
+   transition: 1s bottom, 4s 1s left cubic-bezier(0,1,1,1);	
+}
 
-	
+.ayouPict {
+  width: 75%;
+  height: auto;
+  z-index: 3;
+}
+.victoriaPict {
+  width: 90%;
+  z-index: 3;
+}
+
+.sylvainPict {
+  width: 75%;
+  z-index: 3;
+}
+.eleonorePict{
+  width:90;
+  z-index: 3;
 }

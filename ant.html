@@ -6,24 +6,23 @@
         <link href="ant.css" rel="stylesheet" >
     </head>
     <body>
-       
+       <div class="filter">
          <div class="square">
-		
-		<div class="divSquare">hello</div>
-	    <div class="divSquare">hello</div>
-	    <div class="divSquare"></div>
-	   <div class="divSquare"></div>
+		<div class="divSquare"><img class="ayouPict" src="ayoub.png"></div>
+	    <div class="divSquare"><img class="victoriaPict" src="victoria.png"></div>
+	    <div class="divSquare"><img class="sylvainPict" src="sylvain.png"></div>
+	   <div class="divSquare"><img class="eleonorePict" src="eleonore.png"></div>
 		
 		
 		
 		
 		
 		</div>
-         
+      </div>   
         
       <script>
 		  
-      var myDiv = document.getElementsByClassName('sponsorElement');
+      var myDiv = document.getElementsByClassName('divSquare');
 			var count = myDiv.length;
 			for (var i = 0; i < count; i += 1) {
 			myDiv[i].onclick = function() {
