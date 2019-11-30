@@ -6,12 +6,11 @@
         <link href="ant.css" rel="stylesheet" >
     </head>
     <body>
-<<<<<<< HEAD
+			
+		
        <div class="filter">
-=======
         
-		<div id="score">0</div>
->>>>>>> cfa6a9b9b4620c63d648eced1dcd2ef54afb7b32
+		<div id="score" class="score">0</div>
          <div class="square">
 		<div class="divSquare"><img class="ayouPict" src="ayoub.png"></div>
 	    <div class="divSquare"><img class="victoriaPict" src="victoria.png"></div>
@@ -31,16 +30,26 @@
 			var count = myDiv.length;
 		    var x = 0;
 			for (var i = 0; i < count; i += 1) {
-			myDiv[i].onmouseover = function() {
-			x += 100;
-				
-			
-				 console.log(x);
-				document.getElementById('score').innerHTML = x;
-				
-				
-			};
+				myDiv[i].style.animationDuration = '5s'
+				myDiv[i].onmousedown = function() {
+					x += 100;
+					document.getElementById('score').innerHTML = x;
+					document.getElementById("score").style.background = "red";
+					setTimeout(() => {
+						document.getElementById("score").style.background = "black";
+					}, 500);
+					const duration = parseInt(this.style.animationDuration);
+					if (duration > 2) {
+						this.style.animationDuration = `${parseInt(this.style.animationDuration) - 0.2}s`
+					}
+				};
 			} 
+			// function mouseDown() {
+ 			// 	 document.getElementById("score").style.background ="red";
+			// 		}
+			// function mouseUp() {
+			// 	document.getElementById("score").style.background = "black";
+			// }
 		  
 		
 	</script>
