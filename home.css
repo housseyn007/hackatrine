@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    overflow: hidden;
+}
+
+.zoom {
+    background: url("images/menu-bg.jpg");
+    height: 100vh;
+    width: 100vw;
+}
+
+.menu-bg {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: rgb(80, 80, 80);
+    text-shadow: 0.1em 0.1em #1a1a1a;
+    margin-bottom: 150px;
+}
+
+h2 {
+    font-size: 3em;
+    color: rgb(80, 80, 80);
+    text-shadow: 0.1em 0.1em #1a1a1a;
+    margin-bottom: 30px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.title-container {
+    display: flex;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+a:hover h2 {
+    color: rgb(60, 60, 60);
+}
+
+.zoom {
+    animation: scale 10s ease-in-out infinite;
+}
+
+@keyframes scale {
+    50% {
+        -webkit-transform: scale(2);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}

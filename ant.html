@@ -30,6 +30,7 @@
 			var count = myDiv.length;
 		    var x = 0;
 			for (var i = 0; i < count; i += 1) {
+<<<<<<< HEAD
 				myDiv[i].style.animationDuration = '5s'
 				myDiv[i].onmousedown = function() {
 					x += 100;
@@ -52,7 +53,19 @@
 			// }
 		  
 		
+=======
+			myDiv[i].onmouseover = function() {
+			x += 100;
+				
+			
+				 console.log(x);
+				document.getElementById('score').innerHTML = x;
+				
+				
+			};
+			}
+>>>>>>> 896b6b258726366f11de64b5b54dfed980592902
 	</script>
-       
-    </body>
+</body>
+
 </html>
